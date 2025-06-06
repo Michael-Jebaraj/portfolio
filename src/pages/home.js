@@ -13,7 +13,7 @@ const projects = [
 				<li>Designed to give a clear and simple overview of what I can do</li>
 			</ul>
 		),
-		github: "https://github.com/yourusername/portfolio",
+		github: "https://github.com/Michael-Jebaraj/portfolio",
 		live: "https://yourportfolio.com",
 	},
 	{
