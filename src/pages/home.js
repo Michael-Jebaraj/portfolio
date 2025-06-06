@@ -14,7 +14,7 @@ const projects = [
 			</ul>
 		),
 		github: "https://github.com/Michael-Jebaraj/portfolio",
-		live: "https://yourportfolio.com",
+		live: "https://full-stack-portfolio-wsmt.onrender.com/",
 	},
 	{
 		name: "MentorSpark",
