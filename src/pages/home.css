@@ -618,3 +618,35 @@ body {
 .about-text a:hover {
   color: #00ffd0; /* or any accent color you prefer on hover */
 }
+@media (max-width: 600px) {
+  .main-content,
+  .skills-content,
+  .projects-content,
+  .experience-content,
+  .contact-content,
+  .project-detail-section {
+    width: 98vw;
+    max-width: 98vw;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    padding: 18px 0;
+    margin: 18px auto 0 auto;
+  }
+}
+@media (max-width: 400px) {
+  .profile-img {
+    width: 48px;
+    height: 48px;
+  }
+  .welcome-title {
+    font-size: 1.1rem;
+  }
+  .resume-preview-container {
+    height: 60px;
+    border-radius: 6px;
+  }
+  .resume-preview-iframe {
+    height: 40px;
+    border-radius: 4px;
+  }
+}
