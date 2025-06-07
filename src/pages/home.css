@@ -148,7 +148,7 @@ body {
 }
 
 .project-link:hover {
-  color: #00ffd0;
+  color: black;
 }
 
 .project-details {
@@ -179,7 +179,7 @@ body {
   margin-right: 14px;
   margin-top: 6px;
   background: #00ffd0;
-  color: #181818;
+  color: #181818; /* black font */
   font-weight: 600;
   border-radius: 8px;
   padding: 8px 20px;
@@ -189,7 +189,7 @@ body {
 
 .project-btn:hover {
   background: #00cfa6;
-  color: #fff;
+  color: #181818; /* keep black font on hover */
 }
 
 .skills-content {
@@ -601,7 +601,7 @@ body {
 }
 
 .project-link:hover {
-  color: #00ffd0;
+  color: black;
 }
 
 .chevron-icon {
@@ -735,4 +735,5 @@ body {
 .skill-item img[alt="REST APIs"] {
 	filter: brightness(0) saturate(100%) invert(78%) sepia(41%) saturate(351%) hue-rotate(120deg) brightness(98%) contrast(96%);
 }
+
 
