@@ -650,3 +650,89 @@ body {
     border-radius: 4px;
   }
 }
+.skills-marquee-wrapper {
+	overflow: hidden;
+	width: 100%;
+	white-space: nowrap;
+	padding: 1rem 0;
+	margin-top: 1rem;
+	background: rgba(30,30,30,0.98);
+}
+
+.skills-marquee {
+	display: inline-block;
+	white-space: nowrap;
+	animation: scrollSkills 15s linear infinite;
+	font-size: 1.2rem;
+	color: #00ffc3;
+}
+
+.skills-marquee span {
+	display: inline-block;
+	margin-right: 3rem;
+}
+
+@keyframes scrollSkills {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+.skills-marquee-wrapper {
+	overflow: hidden;
+	width: 100%;
+	background-color: rgba(30,30,30,0.98); /* Match container */
+	padding: 1rem 0;
+}
+
+.skills-track {
+	display: flex;
+	width: max-content;
+	animation: scrollSkills 20s linear infinite;
+}
+
+.skill-item {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin-right: 3rem;
+	color: #00ffc3;
+	font-size: 1rem;
+	white-space: nowrap;
+}
+
+.skill-icon {
+	width: 24px;
+	height: 24px;
+	object-fit: contain;
+	filter: brightness(1.2);
+}
+
+@keyframes scrollSkills {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
+}
+.skill-icon {
+	width: 24px;
+	height: 24px;
+	object-fit: contain;
+	filter: brightness(1.2);
+}
+
+/* Custom dark icons to be styled lighter */
+.skill-item img[alt="Express.js"],
+.skill-item img[alt="Git & GitHub"] {
+	filter: invert(1) brightness(1.6);
+}
+
+/* REST API custom icon style */
+.skill-item img[alt="REST APIs"] {
+	filter: brightness(0) saturate(100%) invert(78%) sepia(41%) saturate(351%) hue-rotate(120deg) brightness(98%) contrast(96%);
+}
+
