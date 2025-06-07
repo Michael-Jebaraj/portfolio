@@ -178,18 +178,40 @@ const Home = () => {
 			</div>
 			{/* Skills section BELOW main-content */}
 			<div className="skills-content">
-				<div className="skills-title">Skills</div>
-				<ul className="skills-list">
-					<li>React.js</li>
-					<li>Node.js</li>
-					<li>Express.js</li>
-					<li>MongoDB</li>
-					<li>JavaScript</li>
-					<li>HTML &amp; CSS</li>
-					<li>REST APIs</li>
-					<li>Git &amp; GitHub</li>
-				</ul>
-			</div>
+	<div className="skills-title">Skills</div>
+	<div className="skills-marquee-wrapper">
+		<div className="skills-track">
+			{[
+  { name: "React.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { name: "Node.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+  { name: "Express.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg", dark: true },
+  { name: "MongoDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+  { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  { name: "HTML & CSS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+  { name: "REST APIs", logo: "/api-icon.svg", customColor: true },
+  { name: "Git & GitHub", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", dark: true },
+]
+.concat(
+				[
+  { name: "React.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { name: "Node.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+  { name: "Express.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg", dark: true },
+  { name: "MongoDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+  { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  { name: "HTML & CSS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+  { name: "REST APIs", logo: "/api-icon.svg", customColor: true },
+  { name: "Git & GitHub", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", dark: true },
+]
+
+			).map((skill, idx) => (
+				<div className="skill-item" key={idx}>
+					<img src={skill.logo} alt={skill.name} className="skill-icon" />
+					<span>{skill.name}</span>
+				</div>
+			))}
+		</div>
+	</div>
+</div>
 			{/* Projects section BELOW skills-content */}
 			<div className="projects-content">
 				<div className="projects-title">Projects</div>
